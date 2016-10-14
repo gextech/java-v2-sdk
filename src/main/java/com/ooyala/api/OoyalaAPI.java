@@ -292,7 +292,7 @@ public class OoyalaAPI {
      * @throws IOException
      */
     @SuppressWarnings("unchecked")
-    private String generateURLWithAuthenticationParameters(String httpMethod, String requestPath,
+    public String generateURLWithAuthenticationParameters(String httpMethod, String requestPath,
                                                            HashMap<String, String> parameters,
                                                            String requestBody) throws NoSuchAlgorithmException, IOException {
         HashMap<String, String> parametersWithAuthentication = (HashMap<String, String>) parameters.clone();
